@@ -1,0 +1,204 @@
+package: github.com/stkim1/Go-Legacy-Vendor-Setup
+import:
+#
+# native system
+- package: golang.org/x/sys/unix
+  version: 66b7b1311ac80bbafcd2daeef9a5e6e2cd1e2399
+#
+# logging, error wrap,
+- package: github.com/Sirupsen/logrus
+  version: 44067abb194b1bc8b342e1f2120f8d3ea691b834
+- package: github.com/pkg/errors
+  version: 059132a15dd08d6704c67711dae0cf35ab991756
+- package: github.com/juju/errors
+  version: a4583d0a56eac4bdd939e38050d0c69abe0a9b41
+- package: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+#
+# testing
+- package: gopkg.in/check.v1
+  version: 788fd78401277ebd861206a03c884797c6ec5541
+- package: github.com/google/go-cmp
+  version: 745b8ec8378318d64f3f04949d010ee8d2fc71e2
+#
+# data types & data utils
+- package: github.com/shopspring/decimal
+  version: cd690d0c9e2447b1ef2a129a6b7b49077da89b8e
+- package: github.com/mailgun/timetools
+  version: f3a7b8ffff474320c4f5cc564c9abb2c52ded8bc
+- package: github.com/dustin/go-humanize
+  version: 9f541cc9db5d55bce703bd99987c9d5cb8eea45e
+#
+# data structure
+- package: github.com/imdario/mergo
+  version: ca3dcc1022bae9b5510f3c83705b72db1b1a96f9
+- package: github.com/steveyen/gtreap
+  version: 0abe01ef9be25c4aedc174758ec2d917314d6d70
+#
+# database
+- package: github.com/coreos/bbolt
+  version: v1.3.2
+- package: github.com/mattn/go-sqlite3
+  version: eed79b86572f203cc92e92048ba06b56a8ca06e8
+- package: github.com/go-sql-driver/mysql
+  version: v1.4.1
+#
+# cryptography
+- package: golang.org/x/crypto
+  version: cbcb750295291b33242907a04be40e80801d0cfc
+#
+# secure protocol
+- package: golang.org/x/oauth2
+  version: f42d05182288abf10faef86d16c0d07b8d40ea2d
+#
+# session
+- package: github.com/gogo/protobuf
+  version: 211a54c57504366b3bf4b490fb3c0a5f5b8d290b
+- package: github.com/yosssi/boltstore
+  version: 36632d49165582dba58e99530427757c5279ce84
+- package: github.com/gorilla/sessions
+  version: 68d1edeb366b66bdd5d714e32d7a065f74b03b9b
+- package: github.com/gorilla/securecookie
+  version: e65cf8c5df817c89aeb47ecb46064e802e2de943
+#
+# context
+- package: github.com/gorilla/context
+  version: 51ce91d2eaddeca0ef29a71d766bb3634dadf729
+#
+# network service
+- package: github.com/julienschmidt/httprouter
+  version: 26a05976f9bf5c3aa992cc20e8588c359418ee58
+- package: github.com/gregjones/httpcache
+  version: c63ab54fda8f77302f8d414e19933f2b6026a089
+- package: github.com/cloudflare/cloudflare-go
+  version: 129166671c6ecb20c071c24004aa98f9aa0cdb8a
+#
+# format parser
+- package: gopkg.in/yaml.v2
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
+- package: github.com/mailru/easyjson
+  version: 60711f1a8329503b04e1c88535f419d0bb440bff
+#
+# content formats
+- package: github.com/beevik/etree
+  version: f2d93441e64237d24d3ea1091f8a20762026b8c0
+- package: github.com/ikeikeikeike/go-sitemap-generator
+  version: ca217789ed9129d281be4f3b307ff1d4573e68e3
+- package: github.com/google/go-querystring
+  version: 44c6ddd0a2342c386950e880b658017258da92fc
+- package: github.com/PuerkitoBio/goquery
+  version: 2af3d16e2bb8c46efba31b0af1d7ca2eac7fcc23
+- package: github.com/flosch/pongo2
+  version: 24195e6d38b06020d7a92c7b11960cf2e7cad2f2
+#
+# analytics, monitoring
+- package: github.com/pkg/profile
+  version: 22592cc4bae3572d59be8852c6980023e4c9dec5
+- package: github.com/thoas/stats
+  version: fc5c06ed3df0e436bc483ccc97053cd98930ca61
+- package: github.com/usefathom/fathom
+  version: v1.2.1
+#
+# Time
+- package: github.com/rubrikinc/kronos
+  version: 4907e3ceae1817a5fcfabc94287a0a2d7ebb069f
+#
+# Random
+- package: github.com/sony/sonyflake
+  version: 6d5bd61810093eae37d7d605d0cbdd845969b5b2
+#
+# Email
+- package: github.com/toorop/go-dkim
+  version: 83672023c79e6b352bf9d4908e6c060c7a24323c
+- package: github.com/go-mail/mail
+  version: v2.3.1
+- package: github.com/toorop/tmail
+  version: 2dc86d1486787e964c18bca4b7c4b0972bc30090
+- package: github.com/emersion/go-dkim
+  version: eb84b016af30c6e178bf9e0d0548c81ec884030f
+#
+# Amazon
+#- package: github.com/DDRBoxman/go-amazon-product-api
+#  version: 6818ea8b9e9c72d13a1e278fdf5cd8564f4b1f03
+- package: github.com/mmcdole/gofeed
+  version: eb870fd61fb89d07d55477e20d11449308489349
+- package: github.com/mmcdole/goxpp
+  version: 0068e33feabfc0086c7aeb58a9603f91c061c89f
+- package: github.com/stretchr/testify
+  version: 5b93e2dc01fd8fbf32aa74a198b0ebe78f6f6b6f
+- package: github.com/andybalholm/cascadia
+  version: 680b6a57bda4f657485ad44bdea42342ead737bc
+- package: golang.org/x/text
+  version: 17bcc049122f272a32787ba38073ee47433023e9
+#
+# Algorithm
+- package: github.com/sean-public/fast-skiplist
+  version: 1de4bd306c3f816ec0c2702c89d3e2f279f67422
+#
+# Hash
+- package: github.com/speps/go-hashids
+  version: 6ba254bc2e328fdc3fca46bfbccea4ab8052755f
+#
+# Nodejs Interop
+- package: github.com/zealic/go2node
+  version: f913bd7b7d589b555466018e6d43790adf400a1e
+#
+# Crawl
+- package: github.com/temoto/robotstxt
+  version: 97ee4a9ee6ea01ed0bbf0325dd789f74cac6cb94
+#
+# Network File Service
+- package: github.com/vmware/go-nfs-client
+  version: 2149bc2ae611c66d25abace028e147d96d85515e
+#
+# Machinary (v1.5.5)
+- package: github.com/RichardKnop/machinery
+  version: v1.5.5
+- package: cloud.google.com/go
+  version: v0.31.0
+- package: github.com/RichardKnop/logging
+  version: 75cec7213f7c
+- package: github.com/RichardKnop/redsync
+  version: v1.2.0
+- package: github.com/aws/aws-sdk-go
+  version: v1.15.66
+- package: github.com/bradfitz/gomemcache
+  version: bc664df96737
+- package: github.com/gomodule/redigo
+  version: v2.0.0
+- package: github.com/google/uuid
+  version: v1.0.0
+- package: github.com/googleapis/gax-go
+  version: v2.0.0
+- package: github.com/kelseyhightower/envconfig
+  version: v1.3.0
+- package: github.com/opentracing/opentracing-go
+  version: v1.0.2
+- package: github.com/streadway/amqp
+  version: 70e15c650864
+- package: github.com/urfave/cli
+  version: v1.20.0
+- package: go.opencensus.io
+  version: v0.18.0
+- package: golang.org/x/net
+  version: c44066c5c816
+- package: google.golang.org/api
+  version: 61ce27ee8154
+- package: google.golang.org/genproto
+  version: b69ba1387ce2
+- package: google.golang.org/grpc
+  version: v1.16.0
+- package: gopkg.in/mgo.v2
+  version: 9856a29383ce
+- package: golang.org/x/sync
+  version: 37e7f081c4d4c64e13b10787722085407fe5d15f
+#
+# WebPush
+- package: github.com/SherClockHolmes/webpush-go
+  version: 7ed4780304f15dd5a2f5c9e316ce79e9f1c1b6d2
+- package: github.com/dgrijalva/jwt-go
+  version: 3af4c746e1c248ee8491a3e0c6f7a9cd831e95f8
+#
+# CLI
+- package: github.com/codegangsta/cli
+  version: b67dcf995b6a7b7f14fad5fcb7cc5441b05e814b
